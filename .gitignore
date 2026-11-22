@@ -1,0 +1,12 @@
+
+node_modules/
+dist/
+out/
+*.log
+*.pfx
+*.p12
+*.key
+.env
+.env.*
+*.pem
+

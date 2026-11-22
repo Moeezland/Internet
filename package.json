@@ -1,0 +1,45 @@
+{
+  "name": "moeezland-internet",
+  "version": "1.1.0",
+  "description": "Moeezland Internet desktop browser",
+  "author": "Moeezland",
+  "license": "UNLICENSED",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "check": "node --check main.js && node --check preload.js && node --check renderer.js",
+    "dist:win": "electron-builder --win nsis --x64"
+  },
+  "devDependencies": {
+    "electron": "45.4.1",
+    "electron-builder": "26.0.12"
+  },
+  "build": {
+    "appId": "com.moeezland.internet",
+    "productName": "Moeezland Internet",
+    "asar": true,
+    "directories": { "output": "dist" },
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "renderer.js",
+      "styles.css",
+      "logo.png",
+      "package.json"
+    ],
+    "win": {
+      "target": [{ "target": "nsis", "arch": ["x64"] }],
+      "artifactName": "Moeezland-Internet-Setup-${version}-x64.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Moeezland Internet",
+      "deleteAppDataOnUninstall": false
+    }
+  }
+}
