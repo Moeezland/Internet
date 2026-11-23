@@ -58,3 +58,30 @@ Before public release:
 ## Signing
 
 This project does not contain a private signing key or a certificate. Never put a private code-signing key in this source folder or publish it. A self-signed certificate is for controlled testing only and does not make a public download trusted. Microsoft Store distribution and direct EXE distribution have different signing requirements.
+
+
+## Open Source
+
+Moeezland Internet is an open-source desktop web browser developed by Moeezland.
+
+The project is released under the MIT License. You are welcome to use, study, modify, and redistribute the software in accordance with the terms of that license.
+
+### Contributions
+
+Bug reports, security reports, suggestions, and code contributions are welcome.
+
+Please do not publish security vulnerabilities as public issues. Contact the project maintainer privately to report them.
+
+### Security
+
+Security is an ongoing priority. The project uses Electron security features, including context isolation, sandboxing, restricted IPC, and a restrictive Content Security Policy.
+
+This project has not undergone an independent professional security audit. Users should review the source code and understand its limitations before using it.
+
+### Maintainer
+
+Moeezland
+
+### License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
